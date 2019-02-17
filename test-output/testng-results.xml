@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="5" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="GmailTestTask" duration-ms="159129" started-at="2019-02-17T00:28:50Z" finished-at="2019-02-17T00:31:29Z">
+    <groups>
+    </groups>
+    <test name="loginToGmailTest" duration-ms="150737" started-at="2019-02-17T00:28:50Z" finished-at="2019-02-17T00:31:20Z">
+      <class name="tests.LoginTest">
+        <test-method status="PASS" signature="loginToGmailTest()[pri:0, instance:tests.LoginTest@71bbf57e]" name="loginToGmailTest" duration-ms="150700" started-at="2019-02-17T00:28:50Z" description="Login with a valid credentials" finished-at="2019-02-17T00:31:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToGmailTest -->
+      </class> <!-- tests.LoginTest -->
+    </test> <!-- loginToGmailTest -->
+    <test name="composeEmailTest" duration-ms="22" started-at="2019-02-17T00:31:20Z" finished-at="2019-02-17T00:31:20Z">
+      <class name="tests.InboxTest">
+        <test-method status="FAIL" signature="composeEmailTest()[pri:1, instance:tests.InboxTest@646d64ab]" name="composeEmailTest" duration-ms="1" started-at="2019-02-17T00:31:20Z" description="Compose email" finished-at="2019-02-17T00:31:20Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at tests.InboxTest.composeEmailTest(InboxTest.java:31)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- composeEmailTest -->
+        <test-method status="FAIL" signature="removeEmailTest()[pri:2, instance:tests.InboxTest@646d64ab]" name="removeEmailTest" duration-ms="1" started-at="2019-02-17T00:31:20Z" description="Remove email" finished-at="2019-02-17T00:31:20Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at tests.InboxTest.removeEmailTest(InboxTest.java:42)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeEmailTest -->
+      </class> <!-- tests.InboxTest -->
+    </test> <!-- composeEmailTest -->
+    <test name="removeEmailTest" duration-ms="8324" started-at="2019-02-17T00:31:20Z" finished-at="2019-02-17T00:31:29Z">
+      <class name="tests.LoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.LoginTest@71bbf57e]" name="setUp" is-config="true" duration-ms="8234" started-at="2019-02-17T00:28:36Z" finished-at="2019-02-17T00:28:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.InboxTest@704a52ec]" name="setUp" is-config="true" duration-ms="5679" started-at="2019-02-17T00:28:44Z" finished-at="2019-02-17T00:28:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.InboxTest">
+        <test-method status="PASS" signature="composeEmailTest()[pri:1, instance:tests.InboxTest@704a52ec]" name="composeEmailTest" duration-ms="3855" started-at="2019-02-17T00:31:20Z" description="Compose email" finished-at="2019-02-17T00:31:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- composeEmailTest -->
+        <test-method status="PASS" signature="removeEmailTest()[pri:2, instance:tests.InboxTest@704a52ec]" name="removeEmailTest" duration-ms="4467" started-at="2019-02-17T00:31:24Z" description="Remove email" finished-at="2019-02-17T00:31:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeEmailTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.InboxTest@704a52ec]" name="tearDown" is-config="true" duration-ms="794" started-at="2019-02-17T00:31:29Z" finished-at="2019-02-17T00:31:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.InboxTest -->
+    </test> <!-- removeEmailTest -->
+  </suite> <!-- GmailTestTask -->
+</testng-results>

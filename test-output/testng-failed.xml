@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [GmailTestTask]" parallel="tests">
+  <test thread-count="1" name="composeEmailTest(failed)" parallel="tests">
+    <classes>
+      <class name="tests.InboxTest">
+        <methods>
+          <include name="removeEmailTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="composeEmailTest"/>
+        </methods>
+      </class> <!-- tests.InboxTest -->
+    </classes>
+  </test> <!-- composeEmailTest(failed) -->
+</suite> <!-- Failed suite [GmailTestTask] -->
